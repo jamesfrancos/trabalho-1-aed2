@@ -24,10 +24,11 @@ public class ParProximo {
 
     public static void parComMenorDistancia(Ponto[] pontos){
         menorDistancia(pontos,0,pontos.length-1);
+        System.out.println("Par com a menor distância encontrada:");
         for(Ponto p:parMenorDistancia){
             System.out.println(p.toString());
         }
-        System.out.println("Menor distancia encontrada: "+menorDistanciaRef);
+        System.out.println("Menor distância encontrada: "+menorDistanciaRef);
     }
 
     public static void menorDistancia(Ponto[] pontos,int inicio,int fim){
@@ -148,7 +149,7 @@ public class ParProximo {
 
         double tempoTotal = (tempoFinal-tempoInicial)/1_000_000.0;
 
-        System.out.println(tempoTotal);
+        System.out.println("Tempo de execução em milissegundos: "+tempoTotal);
 
     }
 }
